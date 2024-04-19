@@ -27,9 +27,9 @@ let pessoa = {
 
 console.log(pessoa.nome);
 
-pessoa.nome = "Gustavo Colombelli"
+pessoa.nome = "Josimar"
 
-pessoa.cidade = "Foz do Iguaçu"
+pessoa.cidade = "Recife"
 
 delete pessoa.profissao;
 
