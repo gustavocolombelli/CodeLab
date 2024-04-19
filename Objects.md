@@ -5,7 +5,7 @@
 
 1.2 Atribua valores nas propriedades nome, idade e profissão 
 
-1.3 Imprima apenas a propriedade nome do objeto
+1.3 Imprima apenas o valor da propriedade nome do objeto
 
 1.4 Sobrescreva o valor da propriedade nome do objeto
 
@@ -27,6 +27,9 @@ let pessoa = {
 
 console.log(pessoa.nome);
 pessoa.nome = "Gustavo Colombelli"
+pessoa.cidade = "Foz do Iguaçu"
+delete pessoa.profissao;
+console.log(pessoa);
 
 ```
 </details>
