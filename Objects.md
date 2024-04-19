@@ -26,9 +26,13 @@ let pessoa = {
 }
 
 console.log(pessoa.nome);
+
 pessoa.nome = "Gustavo Colombelli"
+
 pessoa.cidade = "Foz do Iguaçu"
+
 delete pessoa.profissao;
+
 console.log(pessoa);
 
 ```
