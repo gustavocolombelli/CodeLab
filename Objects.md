@@ -7,13 +7,29 @@
 
 1.3 Imprima apenas a propriedade nome do objeto
 
-1.4 Sobrescreva a propriedade nome do objeto
+1.4 Sobrescreva o valor da propriedade nome do objeto
 
 1.5 Adicione uma nova propriedade chamada cidade, e atribua um valor a esta propriedade
 
 1.5 Delete a propriedade profissão
 
 1.6 Imprima o objeto por completo
+
+<details>
+<summary>Resposta</summary>
+
+```javascript
+let pessoa = {
+  nome: "Gustavo",
+  idade: 29,
+  profissao: "Dev"
+}
+
+console.log(pessoa.nome);
+pessoa.nome = "Gustavo Colombelli"
+
+```
+</details>
 
 ### Exercício 2
 
