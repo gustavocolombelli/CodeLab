@@ -11,9 +11,9 @@
 
 1.5 Adicione uma nova propriedade chamada cidade, e atribua um valor a esta propriedade
 
-1.5 Imprima o objeto por completo
+1.5 Delete a propriedade profissão
 
-1.6 Delete a propriedade profissão
+1.6 Imprima o objeto por completo
 
 ### Exercício 2
 
