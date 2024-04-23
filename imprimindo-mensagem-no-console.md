@@ -10,7 +10,7 @@ console.info()
 ```
 ### Exercícios e fixação
 
-#### 1. Utilizando o operador typeof imprima os tipos de dado a seguir:
+#### 1. Utilizando as funções de impressão, implemente os exercícios a seguir:
 * 1.1\. Imprima "Olá mundo"
 * 1.2\. Imprima "Ocorreu um erro inesperado!" utilizando a função correspondente
 * 1.3\. Imprima "Essa é uma mensagem informativa!" utilizando a função correspondente
