@@ -54,7 +54,7 @@ console.info()
 ```
 </details>
 
-#### 2. Utilizando o operador typeof para imprimir os tipos dos exercícios a seguir
+#### 2. Utilizando o operador `typeof` para imprimir os tipos dos exercícios a seguir
 * 2.1\. Imprima o tipo de dado de: "Ola mundo"
 * 2.2\. Imprima o tipo de dado de: 5
 * 2.3\. Imprima o tipo de dado de: 12.4
