@@ -61,7 +61,7 @@ O objeto deve conter informações essenciais sobre o produto, incluindo nome, p
 
 * 2.6\. Adicione um atributo porcentagemDesconto, esse atributo devera fornecer um parametro de calculo para subtrair a porcentagem do preco original do produto
 
-*2.7\. Utilizando as funções javascript de manipulação de DOM, realize a implementação de uma funçao que realizará a formação da apresentação do html e informações de um produto essa função, inicialmente irá injetar 1 card no html contendo as informações do produto
+* 2.7\. Utilizando as funções javascript de manipulação de DOM, realize a implementação de uma funçao que realizará a formação da apresentação do html e informações de um produto essa função, inicialmente irá injetar 1 card no html contendo as informações do produto
 <details>
 <summary>Sugestão de Resposta</summary>
 
