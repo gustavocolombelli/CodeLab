@@ -59,9 +59,9 @@ O objeto deve conter informações essenciais sobre o produto, incluindo nome, p
 
 * 2.5\. Imprima todos os produtos que você criou.
 
-* 2.6\.
+* 2.6\. Adicione um atributo porcentagemDesconto, esse atributo devera fornecer um parametro de calculo para subtrair a porcentagem do preco original do produto
 
-*2.7\.  Utilizando as funções javascript de manipulação de DOM, realize a implementação de uma funçao que realizará a formação da apresentação do html e informações de um produto essa função, inicialmente irá injetar 1 card no html contendo as informações do produto
+*2.7\. Utilizando as funções javascript de manipulação de DOM, realize a implementação de uma funçao que realizará a formação da apresentação do html e informações de um produto essa função, inicialmente irá injetar 1 card no html contendo as informações do produto
 <details>
 <summary>Sugestão de Resposta</summary>
 
@@ -112,6 +112,13 @@ let produto1 = new Produto("xiamomi", 1000, "cel 15 polegadas",
 
 produto1.imprimePreco()
 
+function generateProductCard(produto){
+    const card = document.createElement("div");
+    const productName = document.createElement("h1");
+    productName.textContent = produto.nome;
+    card.appendChild(productName);
+    card.classList.add("flex1");
+}
 ```
 </details>
 
