@@ -59,5 +59,59 @@ O objeto deve conter informações essenciais sobre o produto, incluindo nome, p
 
 * 2.5\. Imprima todos os produtos que você criou.
 
+* 2.6\.
 
+*2.7\.  Utilizando as funções javascript de manipulação de DOM, realize a implementação de uma funçao que realizará a formação da apresentação do html e informações de um produto essa função, inicialmente irá injetar 1 card no html contendo as informações do produto
+<details>
+<summary>Sugestão de Resposta</summary>
+
+```javascript
+function Produto(nome, preco,
+                descricao, imagem, 
+                disponivel, avaliacao,
+                caracteristicas, tags, porcentagemDesconto
+                )
+{
+    this.nome = nome;
+    this.preco = preco;
+    this.descricao = descricao
+    this.imagem = imagem;
+    this.disponivel = disponivel;
+    this.avaliacao = avaliacao
+    this.caracteristicas = caracteristicas
+    this.tags = tags;
+    this.porcentagemDesconto = porcentagemDesconto;
+
+    this.imprimeTags = function(){
+        this.tags.forEach((currentTag)=>{ //arrow function
+            console.log(currentTag);
+        })
+    };   
+
+    this.imprimeCaracteristicas = function(){
+        console.log(this.caracteristicas.join(", "));
+    };
+
+    this.getPrecoDesconto = function(){
+        return this.preco * (this.porcentagemDesconto==0?1:this.porcentagemDesconto/100)
+    }
+
+    this.getPrecoFinal = function(){
+        return  this.preco - this.getPrecoDesconto()
+    };
+
+    this.imprimePrecoComDesconto = function(){
+        console.log(`R$ ${this.getPrecoFinal()} ${this.porcentagemDesconto==0?"":"(Desconto de " + this.porcentagemDesconto + "%)"}`)
+
+        verdadeiro?verdadeiro:false
+    };
+}
+
+let produto1 = new Produto("xiamomi", 1000, "cel 15 polegadas",
+"/caminho/imagem,", true, 5, ["15 polegadas", "android 5.3"], ["celular", "xiaomi"], 2)
+
+produto1.imprimePreco()
+
+```
+</details>
 
