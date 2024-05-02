@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+div{
+
+    border: solid 2px;
+    height: 50px;
+    width: 800px;
+}
+
+.borda-vermelha{
+    border-color:red;
+}
+
+.texto-azul{
+    color: blue;
+}
+
+.texto-maior{
+    size: 60px;
+}
+
+#teste-query-selector{
+    color: brown;
+}
+
+#botao-query-selector{
+    background-color: blueviolet;
+}
+
+.borda-azul{
+    border-color: blue;
+}
+
+.display-flex{
+    display: flex;
+}
+
+</style>
+
+
+<body>
+    <div id="selecionarElementoPorId">
+        
+    </div>
+    <div id="selecionarElementoPorId">
+        
+    </div>
+
+    <h1>Testando elemento por tag [0]</h1>
+    <h1>Testando elemento por tag [1]</h1>
+    <h1>Testando elemento por tag [2]</h1>
+
+    
+    <!--  -->
+    <div class="selecionarElementosPorClasse">
+
+    </div>
+
+    <div class="selecionarElementosPorClasse">
+
+    </div>
+
+    <div class="selecionarElementosPorClasse">
+
+    </div>
+
+    <h2 class="teste-query-selector">
+        Texto h2
+    </h2>
+
+    <button id="botao-query-selector">Botão 1</button>
+    <button id="botao-query-selector">Botão 2</button>
+    <button id="botao-query-selector">Botão 3</button>
+
+    <a id="meuLink" href="https://exemplo.com">Link para exemplo</a>
+
+<script>
+
+    //Maneiras básicas de selecionar elementos para manipulação
+
+    const elementoPorId = document.getElementById("selecionarElementoPorId"); //Selecionar elemento por ID, pegará somente 1
+    const meuLink = document.getElementById("meuLink")
+
+    const elementosPorTag = document.getElementsByTagName("h1"); //Pegar elemento por tag
+
+
+    const elementosPorClasse = document.getElementsByClassName("selecionarElementosPorClasse"); //Selecionar todos os elementos com o nome da classe passada por parametro
+
+    const elementoPorQuerySelectorH2 = document.querySelector(".teste-query-selector");// . -> classe
+
+    const elementosPorQuerySelectorBotao = document.querySelectorAll("#botao-query-selector"); //# -> id
+
+
+    //Realizando manipulação sobre os elementos selecionados
+
+    elementoPorId.innerHTML += "Adicionando um texto dentro da tag div";
+    elementoPorId.classList.add("borda-azul");
+
+    //Trocando um link
+    meuLink.href = "https://www.google.com.br";
+
+    //Manipulando todo mundo que é h1
+    for(let i = 0 ; i < elementosPorTag.length ; i++){
+        elementosPorTag[i].textContent = `Iteração ${i}`;
+        elementosPorTag[i].classList.add("texto-azul");
+        elementosPorTag[i].style.fontSize = `${24*(1+i)}px`;
+    }
+
+    //Adicionando um texto dentro de cada div selecionada por classe
+    for(let i = 0 ; i < elementosPorClasse.length ; i++){
+        let novoElementoFilho = document.createElement("p");
+        novoElementoFilho.textContent = `Elemento filho adicionado no elemento pai ${i}`
+        elementosPorClasse[i].appendChild(novoElementoFilho);
+    }
+
+    //Alterando um elemento selecionado por query selector
+    elementoPorQuerySelectorH2.textContent = "Novo texto adicionado dinamicamente"
+
+    //Alterando varios elementos selecionados por query selector all
+    for(let i = 0 ; i < elementosPorQuerySelectorBotao.length ; i++){
+        elementosPorQuerySelectorBotao[i].textContent = `Texto botão iteração ${i}`
+    }
+
+    
+
+    
+
+
+</script>    
+
+</body>
+</html>
