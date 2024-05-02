@@ -102,8 +102,6 @@ function Produto(nome, preco,
 
     this.imprimePrecoComDesconto = function(){
         console.log(`R$ ${this.getPrecoFinal()} ${this.porcentagemDesconto==0?"":"(Desconto de " + this.porcentagemDesconto + "%)"}`)
-
-        verdadeiro?verdadeiro:false
     };
 }
 
